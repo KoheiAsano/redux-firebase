@@ -1,4 +1,4 @@
-export FirebaseConfig = {
+export const FirebaseConfig = {
   apiKey: "AIzaSyDMkqYpIYzIKZvswkDBmkbw0T7uJjEcUyM",
   authDomain: "redux-fb.firebaseapp.com",
   databaseURL: "https://redux-fb.firebaseio.com",
