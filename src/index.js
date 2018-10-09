@@ -12,8 +12,13 @@ import App from './App';
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <div>
+    <Provider store={store}>
+      <App />
+    </Provider>
+    <button onClick={() => console.log(store.getState())}
+    className="test"
+  >asano</button>
+  </div>,
   document.getElementById('root')
 );

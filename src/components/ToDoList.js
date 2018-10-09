@@ -67,7 +67,7 @@ class ToDoList extends Component {
   }
 
   componentWillMount() {
-    actions.fetchToDos();
+    this.props.fetchToDos();
   }
 
   render() {
@@ -88,6 +88,12 @@ class ToDoList extends Component {
             ) : (
               <i className="large material-icons">add</i>
             )}
+          </button>
+          <button
+            onClick={() => console.log(this.props)}
+            className="btn-floating btn-large teal darken-4"
+          >
+            Yeah~~~
           </button>
         </div>
       </div>

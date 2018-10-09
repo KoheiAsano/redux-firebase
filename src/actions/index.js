@@ -6,6 +6,7 @@ export const addToDo = newToDo => async dispatch => {
 };
 
 export const completeToDo = completeToDoId => async dispatch => {
+  console.log(completeToDoId)
   todosRef.child(completeToDoId).remove();
 };
 
